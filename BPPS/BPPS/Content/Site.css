@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -22,3 +22,10 @@ select,
 textarea {
     max-width: 280px;
 }
+a.site-logo  {     
+ background: url(~/Content/Images/logo_siemens.png) no-repeat top left;
+ display: block;       
+ width: 150px;       
+ height: 85px;       
+ text-indent: -9999px;  /*hides the link text*/ 
+  } 
