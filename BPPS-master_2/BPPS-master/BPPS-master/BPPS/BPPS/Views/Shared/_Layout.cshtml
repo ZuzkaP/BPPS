@@ -19,6 +19,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                   
                 </button>
 
                 < />
@@ -27,15 +28,14 @@
             <br><br><br>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Departments", "Index", "departments")</li>
+                    <li>@Html.ActionLink("Administration", "Index", "departments")</li>
+                    <li>@Html.ActionLink("Reports", "Index", "Projects")</li>
+                       
                     <li>
-                        <a href="#">Questions</a>
+                        <a href="#">Project managment</a>
                         <ul class="sub-menu">
-                            <li class="item">@Html.ActionLink("Create question", "Create", "questions")</li>
-                            <li class="item">@Html.ActionLink("List of questions", "Index", "questions")</li>
+                            <li class="item">@Html.ActionLink("Add project", "Create", "questions")</li>
+                            <li class="item">@Html.ActionLink("Edit/ Remove project", "Index", "questions")</li>
                         </ul>
                     </li>
                 </ul>
@@ -47,7 +47,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year </p>
         </footer>
     </div>
 
