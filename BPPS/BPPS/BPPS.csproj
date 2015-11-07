@@ -249,6 +249,8 @@
     <Content Include="Content\Images\excel_download.png" />
     <Content Include="Content\Images\logo_siemens.png" />
     <Content Include="Content\Images\pdf_download.png" />
+    <Content Include="Content\multiple-select.css" />
+    <Content Include="Content\multiple-select.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -276,6 +278,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.multiple.select.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />

@@ -5,32 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    <link href="~/Content/multiple-select.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <a href="@Url.Action("Index", "Home","Home")" class="navbar-brand">
+            <a href="@Url.Action("Index", "Home", "Home")" class="navbar-brand">
                 <img src="~/Content/Images/logo_siemens.png" title="title" alt="additional title" width=300 height=85 />
-            </a>          
+            </a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                   
-                </button>
 
-                < />
-                
+                </button>
             </div>
             <br><br><br>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Administration", "Index", "departments")</li>
                     <li>@Html.ActionLink("Reports", "Index", "Projects")</li>
-                       
+
                     <li>
                         <a href="#">Project managment</a>
                         <ul class="sub-menu">
@@ -53,6 +50,11 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/jquery.multiple.select.js"></script>
+    <script>
+        $('#testSelect').multipleSelect({
+            width: "300px"
+        });
+    </script>
 </body>
 </html>

@@ -9,6 +9,11 @@
 
 <h2>Create</h2>
 
+<select id="testSelect" multiple="multiple">
+    <option value="1">January</option>
+    <option value="2">February</option>
+    <option value="3">March</option>
+</select>
 
 @using (Html.BeginForm()) 
 {
@@ -46,6 +51,3 @@
     @Html.ActionLink("Back to List", "Index")
 </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
